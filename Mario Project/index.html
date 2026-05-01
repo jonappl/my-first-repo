@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Super Mario NES Player</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- MARIO RIGHT -->
+  <img class="character mario" id="mario" style="--flip:-1" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Mario_by_Shigehisa_Nakaue.png/250px-Mario_by_Shigehisa_Nakaue.png" alt="Mario">
+
+  <!-- CONSOLE -->
+  <div class="console">
+
+    <div class="logo">NINTENDO</div>
+
+    <div class="screen" id="screen">
+      SUPER MARIO BROS<br>Press START
+    </div>
+
+    <div class="controls">
+      <div class="dpad">
+        <button class="up">▲</button>
+        <button class="down">▼</button>
+        <button class="left">◀</button>
+        <button class="right">▶</button>
+        <div class="center"></div>
+      </div>
+
+      <div>
+        <button onclick="playMario()">START</button>
+        <button onclick="jump()">JUMP</button>
+      </div>
+    </div>
+
+    <div class="volume">
+      Volume
+      <input type="range" min="0" max="1" step="0.01" value="0.3" onchange="setVolume(this.value)">
+    </div>
+
+  </div>
+  
+    <!-- LUIGI LEFT -->
+  <img class="character" id="luigi" style="--flip:1" src="https://upload.wikimedia.org/wikipedia/en/b/be/Luigi_by_Shigehisa_Nakaue.png" alt="Luigi">
+
+</div>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>

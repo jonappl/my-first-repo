@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Battle of the Objects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <h1>⚔️ Pokemon Battles ⚔️</h1>
+
+    <div id="search">
+      <select id="char1" placeholder="pokemon"></select>
+      <select id="char2" placeholder="pokemon"></select>
+      <button id="go">GO!</button>
+    </div>
+
+    <!-- NEW: Battlefield wrapper -->
+    <div class="battlefield">
+
+      <!-- NEW: Player sprite -->
+      <img id="player-sprite" class="sprite left" />
+
+      <!-- Existing content grouped as center card -->
+      <div class="center-card" id="center-card" style="display:none;">
+
+        <div class="character">
+          <div>
+            <div id="player-name"></div>
+            <div class="health">HP: <span id="player-health"></span></div>
+          </div>
+          <div><img id="player-sprite2" class="sprite" style="width:50px;"/></div> 
+        </div>
+
+        <div class="character">
+          <div>
+            <div id="monster-name"></div>
+            <div class="health">HP: <span id="monster-health"></span></div>
+          </div>
+          <div><img id="monster-sprite2" class="sprite" style="width:50px;"/></div> 
+        </div>
+
+        <button id="attack-btn">Attack!</button>
+      </div>
+
+      <!-- NEW: Monster sprite -->
+      <img id="monster-sprite" class="sprite right" />
+
+    </div>
+
+    <div class="log" id="log"></div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="battle.js"></script>
+
+</html>

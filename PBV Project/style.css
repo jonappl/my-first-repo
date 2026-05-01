@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  canvas {
+    display: block;
+    margin: 0 auto;
+    background: #0f0f0f;
+  }
+  #stats {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+  }
+  #outcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: yellow;
+    text-align: center;
+    display: none;
+  }

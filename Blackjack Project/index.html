@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blackjack Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="title">BLACKJACK</h1>
+    <div class="subtitle">DEALER MUST HIT TO 17</div>
+
+    <hr>
+
+    <!-- DEALER -->
+    <div class="hand-row">
+        <div class="hand-label">Dealer's Hand:</div>
+        <div class="cards-container" id="dealer-cards"></div>
+        <div class="hand-total">Total: <span id="dealerTotal">0</span></div>
+    </div>
+
+    <hr>
+
+    <!-- PLAYER -->
+    <div class="hand-row">
+        <div class="hand-label">Your Hand:</div>
+        <div class="cards-container" id="player-cards"></div>
+        <div class="hand-total">Total: <span id="playerTotal">0</span></div>
+    </div>
+
+    <hr>
+
+    <div id="message" class="result"></div>
+    <div id="bankrollDiv">Bankroll: $100</div>
+
+    <div class="button-container">
+        <button id="hitBtn">Hit</button>
+        <button id="standBtn">Stand</button>
+        <button id="doubleBtn">Double</button>
+        <button id="playAgainBtn">Play Again</button>
+    </div>
+
+    <!-- LOAD JS LAST -->
+    <script src="script.js"></script>
+</body>
+</html>

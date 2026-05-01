@@ -1,0 +1,93 @@
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Game container card */
+  .container {
+    position: relative; /* allows positioning inside */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 30px 60px; /* extra padding bottom for score */
+    background-color: #e0e0e0; /* nice light gray */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    height: 400px;
+    width: 700px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Buttons section */
+  .divs {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  /* Buttons style */
+  button {
+    background-color: #4CAF50;
+    text-align: center;
+    width: 100px;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Message text */
+  #message {
+    font-size: 44px;
+    font-weight: bold;
+    color: #ff6600;
+    min-height: 60px; /* keeps area stable */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  /* Choices display */
+  #choicesDisplay {
+    
+    font-size: 22px;
+    color: #333;
+    min-height: 50px; /* fixes layout jump */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Score area — always pinned to bottom */
+  #scoreArea {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #compOutput, #userOutput {
+    font-size: 18px;
+    color: #444;
+    margin: 4px 0;
+  }
+  

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Basketball Scoreboard — Functions & Parameters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+  <h1>Functions Demo</h1> 
+  <h2>Basketball Scoreboard</h2> 
+
+  <div class="container">
+    <!-- Controls (LEFT) -->
+    <div class="controls">
+      <div class="team-title">
+        <div class="logo-md">MD</div>
+        <div>Mater Dei </div>
+      </div>
+
+      <!-- Score buttons call addPoints with parameters (team, points) -->
+      <div class="buttons">
+        <button class="btn btn-md" onclick="addPointsMd('md', 1)">+1</button>
+        <button class="btn btn-md" onclick="addPointsMd('md', 2)">+2</button>
+        <button class="btn btn-md" onclick="addPointsMd('md', 3)">+3</button>
+      </div>
+
+      <div style="height:20px"></div> <!-- this gives a little space between the two secitons-->
+
+      <div class="team-title">
+        <div class="logo-away">AW</div>
+        <div>Away </div>
+      </div>
+
+      <div class="buttons">
+        <button class="btn btn-away" onclick="addPointsAw('aw', 1)">+1</button>
+        <button class="btn btn-away" onclick="addPointsAw('aw', 2)">+2</button>
+        <button class="btn btn-away" onclick="addPointsAw('aw', 3)">+3</button>
+      </div>
+
+      <!-- Clear buttons are not inline; they show arrow-function listeners in the JS -->
+      <div class="buttons">
+        <button id="clearMd" class="btn btn-clear">Clear MD</button>
+        <button id="clearAw" class="btn btn-clear">Clear Away</button>
+      </div>
+    </div>
+
+    <!-- Scoreboard (RIGHT) -->
+    <div class="scoreboard">
+      <div class="names">
+        <div>Mater Dei</div>
+        <div>Away</div>
+      </div>
+
+      <div class="scores-row">
+        <div id="scoreMd" class="score">0</div>
+        <div id="scoreAw" class="score">0</div>
+      </div>
+      
+       <div><img src="https://cdn-icons-png.flaticon.com/512/1041/1041168.png" width= 100px></div>
+      
+    </div>
+  </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
